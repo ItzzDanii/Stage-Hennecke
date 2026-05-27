@@ -1,62 +1,118 @@
-*{
+* {
   transition: 0.2s;
 }
 
-body{
+body {
   padding: 25px;
-  background-color: #bee9e8;
-  font-family: 'Roboto',Sans-Serif;
+  background-color: #DCE8F5;
+  font-family: 'Roboto', Sans-Serif;
 }
+
 .title {
-	color: #1b4965;
-	text-align: center;
+  color: #1E3A5F;
+  text-align: center;
 }
 
-.card-container{
-  background-color: #5fa8d3;
-  flex-wrap: wrap;
+.title+p{
+  text-align: center;
+  color: #5A7FBB;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.card-container {
+  background-color: #2563EB;
+  border-radius: 10px;
   display: flex;
-  gap: 20px;
-  padding: 50px;
-  margin-left: 20%;
-  margin-right: 20%;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 50px;
+  column-gap: 20px;
+  padding: 50px 40px;
+  margin: 100px auto;
+  max-width: 800px;
+  width: 100%;
 }
 
-.card{
-  font-size: 1.5rem;
-  background-color: #cae9ff;
+.card {
+  background-color: #EEF5FC;
   padding: 20px;
   border-radius: 10px;
-  flex: 1 1 calc(50% - 10px);
+  height: 200px;
+  width: calc(50% - 10px);
+  min-width: 280px;
   box-sizing: border-box;
-  border: 2px solid black;
+  position: relative;
 }
 
-.card:hover{
-  scale:1.05;
-}
-
-.card h3{
-  color:#5fa8d3;
-  -webkit-text-stroke: 1px #000000;
-}
-
-.card button{
-  background-color: #5fa8d3;
+.card:nth-last-child(2):before {
+  content: "Recente";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #34d497;
   font-weight: bold;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  z-index: 10;
+}
+
+.day-title {
+  color: #2056CD;
+  font-size: 1rem;
+  border-radius: 8px;
+  background-color: #B5D4F4;
+  padding: 5px 10px;
+  margin-right: 50%;
+}
+
+.activity-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 100%;
+}
+
+.card:hover {
+  scale: 1.05;
+}
+
+.card button {
+  background-color: #2563EB;
   text-align: center;
   width: 150px;
   padding: 10px;
-  border: 3px solid rgb(20, 81, 172);
-  box-shadow: 4px 4px darkblue;
+  border: transparent;
+  box-shadow: 4px 4px #1E3A5F;
+  border-radius: 10px;
+  margin-top: 10px;
+  color: white;
+  font-weight: bolder;
 }
 
-.card button:hover{
-  scale:1.1;
+.card button:hover {
+  scale: 1.1;
   cursor: pointer;
 }
 
-.card button a{
-  text-decoration: none;
-  color: white;
+.card#add-card {
+  text-align: center;
+  padding-top: 60px;
+  background-color: #DBEAFE;
+  border: 2px dashed darkslategray;
+}
+
+.card#add-card button {
+  background-color: transparent;
+  box-shadow: none;
+  font-size: 2.5rem;
+  padding: 0;
+  margin: 0;
+  color: #2563EB;
+}
+
+.card#add-card p {
+  color: #5A7FBB;
+  font-weight: bold;
 }

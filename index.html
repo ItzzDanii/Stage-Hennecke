@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="/styles.css">
-  </head>
-  <body>
-      <h1 class="title">Raccolta Attività Stage 2026</h1>
-      <div class="card-container">
-        <div class="card" id="1">
-          <h3>Day 1 - Introduzione</h3>
-          <button><a href="#">Vedi Dettagli</a></button>
-        </div>
-        
-        <div class="card" id="2">
-          <h3>Day 2 - Specifiche elettriche</h3>
-          <button><a href="#">Vedi Dettagli</a></button>
-        </div>
-        
-        <div class="card" id="3">
-          <h3>Day 3 - Schema elettrico</h3>
-          <button><a href="#">Vedi Dettagli</a></button>
-        </div>
-      </div>
-      <script src="script.js"></script>
-  </body>
+
+<head>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body onload="caricaCards()">
+  <h1 class="title">Raccolta Attività Stage 2026</h1>
+  <p>Dal 25 Maggio al 25 Giugno</p>
+  <div class="card-container">
+    <div class="card" id="1">
+      <h3 class="day-title">Day 01 - 25/05/2026</h3>
+      <p class="activity-title">Introduzione all'azienda e team</p>
+      <button onclick="downloadDalServer('day01_1.pdf'), downloadDalServer('day01_2.pdf')">
+        ➔ Vedi Dettagli
+      </button>
+    </div>
+
+    <div class="card" id="2">
+      <h3 class="day-title">Day 02 - 26/05/2026</h3>
+      <p class="activity-title">Specifiche elettriche</p>
+      <button onclick="downloadDalServer('day02.pdf')">
+        ➔ Vedi Dettagli
+      </button>
+    </div>
+
+    <div class="card" id="3">
+      <h3 class="day-title">Day 03 - 27/05/2026</h3>
+      <p class="activity-title">Schema elettrico</p>
+      <button onclick="downloadDalServer('day03.pdf')">
+        ➔ Vedi Dettagli
+      </button>
+    </div>
+
+    <div class="card" id="add-card">
+      <button>+</button>
+      <p>Nuova attività</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>
