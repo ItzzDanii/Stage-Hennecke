@@ -1,0 +1,35 @@
+body{
+  padding: 25px;
+  background-color: #bee9e8;
+  font-family: 'Roboto',Sans-Serif;
+}
+.title {
+	color: #1b4965;
+	text-align: center;
+}
+
+.card-container{
+  background-color: #5fa8d3;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 20px;
+  padding: 50px;
+}
+
+.card{
+  font-size: 1.5rem;
+  background-color: #cae9ff;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 calc(50% - 10px);
+  box-sizing: border-box;
+}
+
+.card h3{
+  color:#5fa8d3;
+  -webkit-text-stroke: 1px #000000;
+}
+
+.card button{
+  background-color: transparent;
+}
