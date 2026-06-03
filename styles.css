@@ -11,7 +11,8 @@ body {
   background-attachment: fixed;
   background-color: #DCE8F5;
   font-family: cursive;
-  height: 100vh;
+  height: 150vh;
+  overflow-x: hidden;
 }
 
 .secondary-bg {
@@ -130,4 +131,19 @@ body {
 .card#add-card p {
   color: #5A7FBB;
   font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 120px;
+  color: #3472d6;
+  border: 2px solid #3472d6;
+  font-weight: bold;
+  font-size: 0.9rem;
+  background-color: #B5D4F4;
+  padding: 10px;
+  border-radius: 8px;
+  position: absolute;
+  left:0;
+  width: 100%;
 }
