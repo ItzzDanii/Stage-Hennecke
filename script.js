@@ -12,10 +12,8 @@ function caricaCards() {
 function downloadDalServer(nomeFile) {
     let element = document.createElement('a');
     
-    // Uniamo la cartella "rel/" al nome del file (es: rel/schema_day03.pdf)
     element.setAttribute('href', 'rel/' + nomeFile);
-    
-    // Forziamo il browser a scaricare il file invece di aprirlo
+
     element.setAttribute('download', nomeFile);
     
     element.style.display = 'none';
